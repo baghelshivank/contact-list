@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>
+            <%=title%>
+        </title>
+        <script src="https://kit.fontawesome.com/c47c66d326.js" crossorigin="anonymous"></script>
+        <!-- Our CSS should be below all other styles so that we can over-ride them -->
+        <link rel="stylesheet" href="/css/home.css">       
+    </head>
+
+    <body>
+        <div id="form-heading-container">
+            <h1> <i class="fa-solid fa-address-book"></i> MY CONTACTS LIST </h1>
+            <h6>~ Rendered from EJS View ! </h6> 
+            <form id="new-contact-form" action="/create-contact" method="POST">
+                <i class="fa-solid fa-user"></i><input type="text" name="name" placeholder="Enter name : " required>
+                <i class="fa-solid fa-phone"></i><input type="number" name="phone" placeholder="Enter phone no. : " required>
+                <button id="sub-btn" type="submit"> Add </button> 
+            </form>
+        </div>
+        <div id="contacts-list-container">
+            <ul>
+                <% for(let i of contact_list){ %>
+                    <li class="contact">
+                        <div class="details">
+                            <div id="p1"> <!-- <i class="fa-regular fa-user"></i> --> <%= i.name %></div>
+                            <div id="p2"> <%= i.phone %></div>
+                        </div>
+                        <div class="delete-button">
+                            <!-- <a href="/delete-contact/<%= i.phone %>"> -->    
+                            <!--Above, we simply have a param. There is no key associated with the value being passed. The concerned key,
+                                or the way to interpret the value being passed has to be taken care inside the controller function.
+                                Below, we will discuss query param and also string param(or query string param). -->
+                            <!-- <a href="/delete-contact/?phone=<%= i.phone %> &name=<%= i.name %>" >   -->
+                            <!--A query parameter is a key-value pair (a value assigned to a parameter) appended to the end of a URL 
+                                (added to a base URL by a Web browser or other client application). It is a URL extension that contains 
+                                data provided to a web-based application and/or a back-end-repository. It starts with a question mark 
+                                character(an identifier) at the end of the URL. E.g. https://abc.org?name1=amit 
+                                Here "name1=amit" is a query parameter.
+                                A query string parameter is nothing but multiple query parameters joined by the connector(&). 
+                                E.g. https://xyz.com/home?name1=amit%20pandey&name2=ritesh&city=kolkata 
+                                Here 3 query parameters are joined by connectors(&) to form a query string. %20 is used to fill space.-->
+                        
+                        <!-- MFEA 8
+                            <a href="/delete-contact/?phone=<%= i.phone %>" >    
+                                <i class="fa-solid fa-circle-xmark"> </i>
+                            </a>
+                        -->
+                            <!-- MFEA 13 -->
+                            <a href="/delete-contact/?id=<%= i._id %>" >    
+                                <i class="fa-solid fa-circle-xmark"> </i>
+                            </a>
+                            <!-- <a> tag when clicked sends a get request by default. -->
+                        </div>
+                    </li>
+                <%}%>
+            </ul>
+        </div>
+       
+        <script type="text/javascript" src="/js/home.js"></script>
+    </body>
+</html>

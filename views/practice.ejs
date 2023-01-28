@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>
+            <%= locals.title %>
+            <!--  <%=title %>  -->
+        </title>
+
+    </head>
+    <body>
+        <h1> PLAYGROUND </h1>
+        <ul>
+            <% for(let i =1; i<11; i++){ %>
+            <li> 
+                <%=i%>
+            </li>
+            <% } %>
+        </ul>
+
+       
+        <%  if(true){  %>
+            <h1> It can't be TRUE !!! </h1>
+        
+        <% }else{ %>
+            <h1> It's False !!! </h1>
+        <%  }  %>
+
+
+    </body>
+</html>

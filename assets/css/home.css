@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    font-family: sans-serif;
+    color: aliceblue;
+    /* background-image:radial-gradient(closest-side,black,yellow,red); */
+    background: radial-gradient(ellipse at 0%, white 5%, yellow 10%, orange 15%, red 20%, black 40%);
+    /* animation: radial-gradient 2s ease infinite; */
+}
+h1{ 
+    /* We will use fonts from "font-awesome" which is a design library for icons that uses SVG (Scale Vector Graphics). All we got to do
+     is include some classes( provided to us via CDN or Content Delivery Network) and the icons get rendered. */
+    margin-top: 25;
+}
+h6{
+    color: grey;
+}
+#form-heading-container{
+    text-align: center;
+    margin-top: 4%;
+}
+#contacts-list-container ul{
+    padding: 0;
+    list-style: none;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 3%;
+}
+#sub-btn{
+    margin-left: 2%;
+    border-radius: 50px ;
+    transition : 0.6s ease-in-out;
+    font-size: large;
+    font-weight: 200;
+}
+
+#sub-btn:hover{
+    background-color: orchid;/*rgb(239, 178, 112);*/
+    transform : scale(1.1);
+}
+
+input, button{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    width : 170px;
+    font-size: medium;
+    box-shadow: 7px 7px 10px orchid;
+
+}
+.contact{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    /* padding: 3px, 10px; */
+    border: 1px solid aliceblue;
+    background-color: rgb(174, 91, 91);
+    box-shadow: 1px 1px 1px 1px blue;
+    color: aliceblue;
+}
+.contact:hover{
+        background-color: rgb(239, 178, 112);
+}
+#contacts-list-container .details{
+    /* justify-content: space-between; */
+    width: 90%;
+    margin-left: 0%;
+    display: inherit;
+} 
+
+#contacts-list-container .details #p1{
+    padding-top: 10px;
+    width: 50%;
+    text-align: left; 
+    display: inline-block;
+    padding-left: 10px;
+    font-size: 20px;
+    overflow-x:hidden;
+    margin-right: 15px;
+    /* margin-right: 80px; */
+}
+
+#contacts-list-container .details #p2{
+    display: inline-block;
+    padding-top: 10px;
+    width: 50%;
+    font-size: 20px;
+    overflow-x:hidden;
+    /* text-align: right; */
+    /* margin-right: 160px; */
+    /* justify-content: space-between; */
+
+}
+
+ #contacts-list-container .delete-button{
+    width: 10%;
+    text-align: center;
+    padding-top: 10px;
+      
+ }
+ #contacts-list-container .delete-button a{
+    color: aliceblue;
+    background-color: red;
+    font-size: 25px;
+ }
+
+
+/* @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+    
+} */
