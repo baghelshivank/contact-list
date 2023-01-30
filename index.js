@@ -64,7 +64,7 @@ var contactList = [   // MFEA 4
     }
 ];
 
-app.get('/threeidiots', function(req,res){  // MFEA 2 
+app.get('/', function(req,res){  // MFEA 2 
     // The first parameter i.e., '/threeidiots' is termed as a route. 
     //res.send('<h1> The corporation is in build mode </h1>');  // MFEA 2 
     //console.log(req.url);
