@@ -6,7 +6,7 @@
 
 ## Introduction : 
 
-This is a Contacts List Project which is designed using Back-End Technology of MEN Stack (MongoDB, ExpressJS, NodeJS). 
+This is a Contacts List Project which is designed using Back-End Technology of MEN Stack (MongoDB, ExpressJS, NodeJS) and EJS as a templating engine. 
 This website is completely Responsive across all the Devices.
 
 Users are able to Add New Contacts.
