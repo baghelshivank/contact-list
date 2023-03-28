@@ -1,5 +1,5 @@
-![contact-list](https://user-images.githubusercontent.com/110939302/215438730-d5d975cb-066c-4955-a3b0-d834af160eab.png width="100%")
-<img src="https://user-images.githubusercontent.com/110939302/215438730-d5d975cb-066c-4955-a3b0-d834af160eab.png" alt="contact-list" height="100%" width="100%">
+
+<img src="https://user-images.githubusercontent.com/110939302/215438730-d5d975cb-066c-4955-a3b0-d834af160eab.png" alt="contact-list" height="100vh" width="100vw">
 
 
 # CONTACTS LIST 
