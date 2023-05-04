@@ -1,5 +1,5 @@
 
-<img src="https://user-images.githubusercontent.com/110939302/215438730-d5d975cb-066c-4955-a3b0-d834af160eab.png" alt="contact-list" style="object-fit: cover; width: 100vw; height: 100vh">
+<img src="https://github.com/baghelshivank/contact-list/blob/main/ContactList.png" alt="contact-list" style="object-fit: cover; width: 100vw; height: 100vh">
 
 
 # CONTACTS LIST 
