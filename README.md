@@ -36,18 +36,34 @@ express
 mongoose
 nodemon
 
-#### Framework: ExpressJS
+#### Framework:
 
-#### Database: MongoDB
+ExpressJS
 
-#### Version Control System: Git
+#### Database:
 
-#### VCS Hosting: GitHub
+MongoDB
 
-#### Programming / Scripting: JavaScript
+#### Version Control System:
 
-#### Front-End: HTML, CSS, EJS
+Git
 
-#### Runtime Environment: NodeJS
+#### VCS Hosting:
 
-#### Integrated Development Environment: VSCode
+GitHub
+
+#### Programming / Scripting:
+
+JavaScript
+
+#### Front-End:
+
+HTML, CSS, EJS
+
+#### Runtime Environment:
+
+NodeJS
+
+#### Integrated Development Environment:
+
+VSCode
